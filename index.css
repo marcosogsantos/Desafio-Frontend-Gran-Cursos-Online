@@ -1,0 +1,16 @@
+body {
+    font-family: Montserrat;
+}
+
+.border {
+    border: solid 2px red; 
+}
+
+.main-content {
+    background-color: #F9F9F9;
+}
+
+.side-menu{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
+    z-index: 1;
+}

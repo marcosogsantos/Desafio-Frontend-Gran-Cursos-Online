@@ -1,0 +1,28 @@
+.main-section{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.active{
+    background-color:#ECECEC;
+}
+
+.icon-slot{
+    width:20px;
+}
+
+.category-name{
+    font-size: 14px;
+    font-weight:600;
+    color: #999999;
+    margin-left: 3px;
+}
+
+.section{
+    color:#2C2C2C;
+    font-weight:600;
+    margin-bottom: .5em;
+}
+
