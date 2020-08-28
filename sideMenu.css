@@ -1,3 +1,24 @@
+#sideMenu {
+    max-width: 250px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+#sideMenu.active {
+    margin-left: -250px;
+}
+
+@media (max-width: 1100px) {
+    #sideMenu {
+        margin-left: -250px;
+    }
+    #sideMenu.active {
+        margin-left: 0;
+    }
+}
+
 .main-section{
     font-style: normal;
     font-weight: normal;
@@ -25,4 +46,3 @@
     font-weight:600;
     margin-bottom: .5em;
 }
-
