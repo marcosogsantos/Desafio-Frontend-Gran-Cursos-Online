@@ -1,4 +1,5 @@
 #sideMenu {
+    min-width: 250px;
     max-width: 250px;
     top: 0;
     left: 0;
@@ -45,4 +46,22 @@
     color:#2C2C2C;
     font-weight:600;
     margin-bottom: .5em;
+}
+
+#user-info{
+    text-align: end;
+}
+
+#user-shortcut{
+    text-align: start;
+}
+
+@media (max-width: 800px) {
+    #user-info{
+        text-align: center;
+    }
+    #user-shortcut{
+        text-align: center;
+    }
+
 }

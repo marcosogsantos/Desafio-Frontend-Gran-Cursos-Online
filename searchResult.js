@@ -1,23 +1,15 @@
-const allCategories = [
-    { name: "Cell Phone", quantity: 1920},
-    { name: "Computers & TAblets", quantity: 1820},
-    { name: "Cell Phone Accessories", quantity: 462},
-    { name: "Appliances", quantity: 6556},
-    { name: "Audio", quantity: 120},
-    { name: "IPhone Accessproes", quantity: 353},
-    { name: "Cameras & Camcorders", quantity: 45},
-    { name: "IPhone Cases & Clips", quantity: 456},
-    { name: "TV & Home Theater", quantity: 55},
-    { name: "Small Kitchen Appliances", quantity: 10},
+const allResults = [
+    { name: "Apple Watch Series 4 GPS",brand:"APPLE", price: 399,rate:3.4},
+    { name: "JBL Speaker",brand:"JBL", price: 199,rate:3.2},
+    { name: "Apple Iphone X 128GB",brand:"Apple", price: 899,rate:3.6},
+    { name: "Beats Headphones",brand:"Beats", price: 459,rate:3.9},
 ];
 
-let categoryCounter = 0;
-
-let newCategoryElement = (props)=>{
-    const {name,quantity} = props;
+let newProductElement = (props)=>{
+    const {name,brand,price,rate} = props;
     finalString = `
     <div
-    class="product-row row  ml-1 mt-3 mb-3 d-flex d-inline bg-white rounded shadow-sm"
+    class="product-row row m-1 mb-3 d-flex bg-white rounded shadow-sm"
   >
 
     <div class="product-img col">
@@ -28,12 +20,12 @@ let newCategoryElement = (props)=>{
       <div class="col">
 
       <div class="product-name section p-0 pt-2">
-        Apple Iphone X 128GB
+        ${name}
       </div>
       <div>
         by
         <button type="button" class="p-0 btn btn-sm">
-          <strong>Apple</strong>
+          <strong>${brand}</strong>
         </button>
       </div>
       <div class="text-sm">
@@ -49,11 +41,11 @@ let newCategoryElement = (props)=>{
         <div class="text-left d-flex justify-content-end">
         <button class="text-left p-0 pr-1 m-1 pl-1 btn btn-sm btn-primary">
           <i class="fas fa-star"></i>
-          <span class="pl-1">3,6</span>
+          <span class="pl-1">${rate}</span>
         </button>
         </div>
         <div class="text text-center">
-          $399
+            $${price}
         </div>
 
         <div class="text-smallest text-center">
@@ -77,8 +69,7 @@ let newCategoryElement = (props)=>{
 };
 
 $(document).ready(function () {
-    for (let category of allCategories){        
-        $("#filter-category").append(newCategoryElement(category));
-        categoryCounter++
+    for (let category of allResults){        
+        $("#search-result").append(newProductElement(category));
     }
 });

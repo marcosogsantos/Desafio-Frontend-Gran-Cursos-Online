@@ -36,6 +36,10 @@ body {
   box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.235413);
 }
 
+.text-lg {
+  font-size: 18px;
+}
+
 .text-sm {
   font-size: 14px;
 }
@@ -77,10 +81,31 @@ body {
 
 @media (max-width:1000px){
   .product-img{
-    min-height: 300px;
+    min-height: 250px;
   }
+}
+
+.page-number{
+  max-width: 300px;
 }
 
 .border-0{
   border: 0;
+}
+
+.btn-primary{
+  background-color: #0052cc !important;
+}
+
+/* This is the checked state */
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-color: 0052cc;  /* green */
+  /* this bg image SVG is just a white circle, you can replace it with any valid SVG code */
+  
+  border-radius: 50%;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:#0052cc;
 }
