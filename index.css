@@ -1,27 +1,61 @@
 body {
-    font-family: Montserrat;
-    background-color: #F9F9F9;
+  font-family: Montserrat;
+  background-color: #f9f9f9;
 }
 
 .border {
-    border: solid 2px red; 
+  border: solid 2px red;
+}
+
+.gear-button{
+  background-color:#717171; 
 }
 
 .main-content {
-    background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
-.side-menu{
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
-    z-index: 1;
+.side-menu {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
+  z-index: 1;
 }
 
-.navbar{
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
-    z-index: 1;
+.navbar {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
+  z-index: 1;
 }
 
 .wrapper {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.profile-pic-sm{
+  width: 30px;
+  height: 30px;
+  box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.235413);
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-smallest {
+  font-size: 11px;
+}
+
+.filter-divider{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #D6D6D6;
+}
+
+@media (min-width: 800px){
+  #filtersColumn{
+    max-width: 300px;
+  }
+}
+
+.border-0{
+  border: 0;
 }
